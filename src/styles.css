@@ -1,1 +1,336 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.home-content,
+.about-content,
+.projects-content,
+.contact-content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* hero */
+.home-hero {
+  background-color: #f8f8f8;
+  padding: 50px;
+  text-align: center;
+  margin: 0;
+  width: 100%; /* Set width to 100% */
+}
+
+.heading-primary {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.text-primary {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.btn--bg {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn--bg:hover {
+  background-color: #2980b9;
+}
+
+/* about */
+.about {
+  background-color: #000000; /* Set an attractive background color */
+  padding: 80px 0; /* Add padding for spacing */
+
+  /* Center the text within the container */
+  text-align: center;
+}
+
+.main-container {
+  max-width: 1200px; /* Set a max-width for better readability on larger screens */
+  margin: 0 auto; /* Center the container on the page */
+}
+
+.heading-sec {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333; /* Set the main heading color */
+}
+
+.heading-sec__sub {
+  display: block;
+  font-size: 1.2rem;
+  color: #555; /* Set the subheading color */
+}
+
+.about__content {
+  display: flex;
+  justify-content: space-between; /* Create space between content sections */
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.about__content-main {
+  flex: 1; /* Take up available space */
+  text-align: left; /* Align text to the left */
+}
+
+.about__content-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333; /* Set the section title color */
+}
+
+.about__content-details-para {
+  margin-bottom: 15px;
+  color: #555; /* Set the text color */
+}
+
+.btn--med {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: #3498db; /* Set the button background color */
+  color: #fff; /* Set the button text color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn--med:hover {
+  background-color: #2980b9; /* Set the button background color on hover */
+}
+
+.about__content-skills {
+  flex: 1; /* Take up available space */
+  text-align: left; /* Align text to the left */
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap; /* Allow skills to wrap on smaller screens */
+}
+
+.skills__skill {
+  background-color: #3498db; /* Set the skill background color */
+  color: #fff; /* Set the skill text color */
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+
+/* projects */
+.projects {
+  background-color: #f9f9f9; /* Set an attractive background color */
+  padding: 80px 0; /* Add padding for spacing */
+
+  /* Center the text within the container */
+  text-align: center;
+}
+
+.projects__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Distribute projects evenly */
+}
+
+.projects__row {
+  width: 300px; /* Set a fixed width for each project row */
+  margin: 20px; /* Add margin for spacing */
+}
+
+.projects__row-content {
+  padding: 15px;
+  background-color: #fff; /* Set a white background for the project content */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.projects__row-content-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333; /* Set the title color */
+}
+
+.projects__row-content-desc {
+  font-size: 1rem;
+  color: #555; /* Set the description color */
+  margin-bottom: 15px;
+}
+
+.projects__row-content a {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #3498db; /* Set the button background color */
+  color: #fff; /* Set the button text color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.projects__row-content a:hover {
+  background-color: #2980b9; /* Set the button background color on hover */
+}
+
+.contact {
+  background-color: #f6f6f6;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact__form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.heading-sec__main--lt {
+  color: #333;
+}
+
+.heading-sec__sub--lt {
+  display: block;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px; /* Add margin for spacing */
+}
+
+.contact__form {
+  display: grid;
+  grid-gap: 20px;
+  text-align: left; /* Align form fields to the left within the grid */
+}
+
+.contact__form-field {
+  display: grid;
+}
+
+.contact__form-label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact__form-input,
+.contact__form-textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+.contact__form-textarea {
+  resize: vertical;
+}
+
+.contact__btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact__btn:hover {
+  background-color: #2980b9;
+}
+
+
+.main-footer {
+  background-color: #333; /* Set background color for the footer */
+  color: #fff; /* Set text color */
+  padding: 50px 0; /* Add padding for spacing */
+}
+
+.main-footer__upper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-footer__row {
+  flex: 1;
+  margin: 0 20px; /* Add margin between the rows */
+}
+
+.main-footer__heading-sm {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.main-footer__social-cont {
+  display: flex;
+  gap: 10px; /* Add space between social links */
+}
+
+.main-footer__social-cont a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff; /* Set background color for social links */
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  color: #333; /* Set text color for social links */
+  text-decoration: none;
+}
+
+.main-footer__social-cont a:hover {
+  background-color: #ddd; /* Set background color on hover */
+}
+
+.main-footer__short-desc {
+  font-size: 1rem;
+  color: #ccc; /* Set color for short description */
+}
+
+.main-footer__lower {
+  text-align: center;
+  margin-top: 30px; /* Add margin at the top */
+  font-size: 0.8rem;
+  color: #ccc; /* Set color for copyright text */
+}
+
+.main-footer__lower a {
+  color: #fff; /* Set color for the link in copyright text */
+  text-decoration: none;
+}
+
+.main-footer__lower a:hover {
+  text-decoration: underline; /* Underline on hover for the link in copyright text */
+}
